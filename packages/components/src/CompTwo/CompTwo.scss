@@ -1,0 +1,17 @@
+$border-color: white;
+$border-radius: 12px;
+$padding: 3vmin;
+$background-color: #164a61;
+$title-font-size: calc(24px + 1vmin);
+
+.Comp {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: $padding;
+  background: $background-color;
+
+  h3 {
+    font-size: $title-font-size;
+    margin: 0;
+  }
+}

@@ -9,7 +9,8 @@
     "start:storybook": "yarn workspace @project/storybook storybook",
     "start:storybook-ts": "yarn workspace @project/storybook-typescript storybook",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
-    "deploy": "FORCE_COLOR=true lerna run deploy"
+    "deploy": "FORCE_COLOR=true lerna run deploy",
+    "sass": "node-sass -w packages -o packages"
   },
   "workspaces": {
     "packages": [
@@ -56,5 +57,8 @@
       "!src/serviceWorker.{js,jsx,ts,tsx}",
       "!src/**/*.(spec|test|stories).{js,jsx,ts,tsx}"
     ]
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }
